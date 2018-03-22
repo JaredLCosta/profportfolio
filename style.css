@@ -1,0 +1,341 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+body {
+    margin: 3rem 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#navBar {
+    overflow: hidden;
+    background-color: #252525;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    z-index: 1;
+}
+
+#navBar a {
+    float: left;
+    display: block;
+    color: #CCCCCC;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    line-height: 1rem;
+}
+
+#footBar {
+    overflow: hidden;
+    background-color: #252525;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 3rem;
+    z-index: 1;
+}
+
+#footBar a {
+    display: inline-block;
+    color: #CCCCCC;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+}
+
+.headIMG {
+    position: relative;
+    width: auto;
+    height: auto;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.headIMG>nav {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 0 -10px 120px 1px rgba(0,0,0,1) inset;
+}
+
+.headIMG>img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+
+.title {
+    position: relative;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 30vh;
+    margin-left: 36vw;
+    margin-right: 36vw;
+    line-height: 2.5rem;
+    width: 25vw;
+    height: 25vh;
+}
+
+.title>h1 {
+    color: white;
+    text-align: center;
+    font-size: 4.5vw;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.title>p {
+    color: white;
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.aboutMe {
+    position: static;
+    background-color: #242424;
+    width: 100vw;
+    height: 92vh;
+    padding-left: 40vw;
+}
+
+.headShot {
+    position: absolute;
+    height: 45vh;
+    width: 20vw;
+    margin-left: -32vw;
+    margin-top: 15vh;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #484848;
+    display: inline-block;
+    background-color: #303030;
+}
+
+.skills {
+    padding-top: 5vh;
+}
+
+.Hskills {
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    padding-left: 1.18vw;
+}
+
+.Sskills {
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    padding-left: 38.5vw;
+}
+
+.skillOne {
+    position: absolute;
+    height: 20vh;
+    width: 10vw;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #484848;
+    display: inline-block;
+    margin-bottom: 3vh;
+    margin-right: 27vw;
+    background-color: #303030;
+}
+
+.skillOne>img {
+    position: relative;
+    padding-top: 0.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.skillTwo {
+    position: absolute;
+    margin-top: 23.7vh;
+    height: 20vh;
+    width: 10vw;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #484848;
+    display: inline-block;
+    margin-bottom: 3vh;
+    margin-right: 27vw;
+    background: #303030;
+}
+
+.skillTwo>img {
+    position: relative;
+    padding-top: 0.8rem;
+    padding-left: 1.2rem;
+    width: 75%;
+    height: auto;
+}
+
+.skillThree {
+    position: absolute;
+    margin-top: 47.4vh;
+    height: 20vh;
+    width: 10vw;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #484848;
+    display: inline-block;
+    margin-bottom: 3vh;
+    margin-right: 27vw;
+    background: #303030;
+    z-index: 1;
+}
+
+.skillThree>img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.skillFour {
+    position: absolute;
+    margin-left: 37.5vw;
+    height: 20vh;
+    width: 10vw;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #484848;
+    display: inline-block;
+    margin-bottom: 3vh;
+    margin-right: 27vw;
+    background: #303030;
+}
+
+.skillFour>img {
+    position: relative;
+    padding-top: 1rem;
+    padding-left: 0.2rem;
+    width: 97%;
+    height: auto;
+}
+
+.skillFive {
+    position: absolute;
+    margin-left: 37.5vw;
+    margin-top: 23.7vh;
+    height: 20vh;
+    width: 10vw;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #484848;
+    display: inline-block;
+    margin-bottom: 3vh;
+    margin-right: 27vw;
+    background: #303030;
+}
+
+.skillFive>img {
+    position: relative;
+    padding-top: 0.1rem;
+    padding-left: 0.2rem;
+    width: 97%;
+    height: auto;
+}
+
+.skillSix {
+    position: absolute;
+    margin-left: 37.5vw;
+    margin-top: 47.4vh;
+    height: 20vh;
+    width: 10vw;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #484848;
+    display: inline-block;
+    margin-bottom: 3vh;
+    margin-right: 27vw;
+    background: #303030;
+}
+
+.skillSix>img {
+    position: relative;
+    padding-left: 0.2rem;
+    width: 97%;
+    height: auto;
+}
+
+.Projects {
+    position: relative;
+    width: 100vw;
+    height: auto;
+}
+
+.ProjectsIMG {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    filter: blur(5px);
+}
+
+.ProjectsIMG>img {
+    width: 100%;
+    height: auto;
+}
+
+.cardOneIMG {
+    position: relative;
+    height: 20vh;
+    width: 27vw;
+    margin-left: 5vw;
+}
+
+.cardOneIMG>a>button {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.cardOneIMG>a>button>img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.cardTwoIMG {
+    position: relative;
+    height: 20vh;
+    width: 27vw;
+    margin-left: 36vw;
+}
+
+.cardTwoIMG>a>button {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.cardTwoIMG>a>button>img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.cardThreeIMG {
+    position: relative;
+    height: 20vh;
+    width: 27vw;
+    margin-left: 67vw;
+}
+
+.cardThreeIMG>a>button {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.cardThreeIMG>a>button>img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
