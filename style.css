@@ -14,7 +14,7 @@ body {
     top: 0;
     width: 100%;
     height: 3rem;
-    z-index: 1;
+    z-index: 2;
 }
 
 #navBar a {
@@ -24,7 +24,71 @@ body {
     text-align: center;
     padding: 1rem 1rem;
     text-decoration: none;
-    line-height: 1rem;
+    line-height: 2rem;
+}
+
+#navBar>.menu {
+    display:none;
+    background-color: transparent;
+    outline: none;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 2px;
+    float: left;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
+}
+
+#navBar>.menu>img {
+    height: 2rem;
+    width: 2rem;
+}
+
+#navBar>button {
+    display: inline-block;
+}
+
+
+.sideNav {
+    height:100vh;
+    width: 80vw;
+    top: 0;
+    position: fixed;
+    padding-top: 3rem;
+    background-color:#242424;
+    transition: all 0.3s;
+    z-index: 2;
+}
+
+.sideNav>a {
+    display: inline-block;
+    padding:0.5rem;
+    width: 100%;
+    height: 1.5rem;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.sideNav.closed {
+    left: -80vw;
+    opacity: 0;
+}
+
+.sideNav.open {
+    left:  0;
+    opacity: 1;
+}
+
+@media screen and (max-width: 480px){
+    #navBar>a {
+        display: none;
+    }
+    #navBar>.menu{
+        display: inline-block;
+    }
+    #navBar>.button {
+        display: none;
+    }
 }
 
 #footBar {
@@ -34,7 +98,7 @@ body {
     bottom: 0%;
     width: 100%;
     height: 3rem;
-    z-index: 1;
+    z-index: 2;
 }
 
 #footBar a {
@@ -68,6 +132,7 @@ body {
     width: 100%;
     height: auto;
     vertical-align: bottom;
+    overflow: hidden;
 }
 
 
@@ -75,7 +140,7 @@ body {
     position: relative;
     vertical-align: middle;
     background-color: rgba(0,0,0,0.4);
-    margin-top: 30vh;
+    margin-top: 40vh;
     margin-left: 36vw;
     margin-right: 36vw;
     line-height: 2.5rem;
@@ -119,19 +184,23 @@ body {
 }
 
 .skills {
-    padding-top: 5vh;
+    text-align: left;
+    padding-top: 0vh;
 }
 
 .Hskills {
     color: white;
     font-family: 'Oxygen', sans-serif;
-    padding-left: 1.18vw;
+    padding-left: -32vw;
+    padding-top: 5vh;
 }
 
 .Sskills {
+    position: absolute;
     color: white;
     font-family: 'Oxygen', sans-serif;
-    padding-left: 38.5vw;
+    padding-left: 37.2vw;
+    margin-top: -5rem;
 }
 
 .skillOne {
@@ -145,6 +214,7 @@ body {
     margin-bottom: 3vh;
     margin-right: 27vw;
     background-color: #303030;
+    margin-top: 0rem;
 }
 
 .skillOne>img {
@@ -156,7 +226,7 @@ body {
 
 .skillTwo {
     position: absolute;
-    margin-top: 23.7vh;
+    margin-top: 25vh;
     height: 20vh;
     width: 10vw;
     border-style: solid;
@@ -178,7 +248,7 @@ body {
 
 .skillThree {
     position: absolute;
-    margin-top: 47.4vh;
+    margin-top: 50vh;
     height: 20vh;
     width: 10vw;
     border-style: solid;
@@ -188,7 +258,6 @@ body {
     margin-bottom: 3vh;
     margin-right: 27vw;
     background: #303030;
-    z-index: 1;
 }
 
 .skillThree>img {
@@ -222,7 +291,7 @@ body {
 .skillFive {
     position: absolute;
     margin-left: 37.5vw;
-    margin-top: 23.7vh;
+    margin-top: 25vh;
     height: 20vh;
     width: 10vw;
     border-style: solid;
@@ -245,7 +314,7 @@ body {
 .skillSix {
     position: absolute;
     margin-left: 37.5vw;
-    margin-top: 47.4vh;
+    margin-top: 50vh;
     height: 20vh;
     width: 10vw;
     border-style: solid;
@@ -271,23 +340,27 @@ body {
 }
 
 .ProjectsIMG {
-    position: absolute;
+    position: relative;
     width: auto;
     height: auto;
     overflow: hidden;
-    filter: blur(5px);
+    filter: blur(2px);
 }
 
 .ProjectsIMG>img {
-    width: 100%;
+    position: relative;
+    width: 100vw;
     height: auto;
+    max-height: 92.5vh;
 }
 
 .cardOneIMG {
-    position: relative;
+    position: absolute;
     height: 20vh;
     width: 27vw;
     margin-left: 5vw;
+    margin-top: -40rem;
+    z-index: 1;
 }
 
 .cardOneIMG>a>button {
@@ -303,10 +376,12 @@ body {
 }
 
 .cardTwoIMG {
-    position: relative;
+    position: absolute;
     height: 20vh;
     width: 27vw;
     margin-left: 36vw;
+    margin-top: -40rem;
+    z-index: 1;
 }
 
 .cardTwoIMG>a>button {
@@ -322,10 +397,12 @@ body {
 }
 
 .cardThreeIMG {
-    position: relative;
+    position: absolute;
     height: 20vh;
     width: 27vw;
     margin-left: 67vw;
+    margin-top: -40rem;
+    z-index: 1;
 }
 
 .cardThreeIMG>a>button {
@@ -338,4 +415,29 @@ body {
     position: relative;
     width: 100%;
     height: auto;
+}
+
+.contact {
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+    padding-top: 10rem;
+    padding-left: 45rem;
+    background-color: #242424;
+    max-height: 44rem;
+    overflow: hidden;
+}
+
+.ConWrapper {
+    position: relative;
+    width: 20vw;
+    height: 50vh;
+    border: solid;
+    border-color: #484848;
+    background-color: #303030;
+}
+
+#name>TypeName {
+    height:70px;
+
 }
